@@ -56,7 +56,7 @@ export const useCreateMyUser = () => {
             },
             body: JSON.stringify(user),
         });
-
+        debugger
         if(!response.ok) {
             throw new Error("Failed to create user");
         }
