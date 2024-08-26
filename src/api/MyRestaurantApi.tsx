@@ -47,8 +47,8 @@ export const useCreateMyRestaurant = () => {
         restaurantFormData: any
     ): Promise<Restaurant> => {
         const accessToken = await getAccessTokenSilently();
-        const temp = logFormData(restaurantFormData)
-        console.log(temp)
+        //const temp = logFormData(restaurantFormData)
+        //console.log(temp)
         const response = await fetch(`${API_BASE_URL}/api/my/restaurant`, {
             method: "POST",
             headers: {
