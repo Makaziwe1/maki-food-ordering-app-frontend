@@ -32,13 +32,13 @@ export const useGetMyRestaurant = ()=>{
     return { restaurant, isLoading };
 };
 
-const logFormData = (formData) => {
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-    console.log(data);
-};
+//const logFormData = (formData) => {
+    //const data = {};
+    //formData.forEach((value, key) => {
+        //data[key] = value;
+    //});
+    //console.log(data);
+//};
 
 export const useCreateMyRestaurant = () => {
     const { getAccessTokenSilently } = useAuth0();
